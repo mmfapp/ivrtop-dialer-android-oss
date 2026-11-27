@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  HTTPS only, system CAs only (user-installed CAs are NOT trusted in release, preventing
+  interception of provisioning traffic). Debug builds additionally trust user CAs for testing.
+  SIP/TLS is validated separately inside PJSIP against the exported system CA bundle.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user" />
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>

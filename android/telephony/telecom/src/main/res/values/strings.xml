@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Default locale = Hebrew (product default). English lives in values-en. -->
+<resources>
+    <string name="notif_group_calls">שיחות</string>
+    <string name="channel_incoming">שיחות נכנסות</string>
+    <string name="channel_ongoing">שיחות פעילות</string>
+    <string name="channel_missed">שיחות שלא נענו</string>
+    <string name="channel_voicemail">תא קולי</string>
+    <string name="channel_connection">מצב חיבור</string>
+    <string name="channel_system">התראות מערכת</string>
+    <string name="channel_service">הודעות שירות</string>
+
+    <string name="call_incoming">שיחה נכנסת</string>
+    <string name="call_connecting">מתחבר…</string>
+    <string name="call_dialing">מחייג…</string>
+    <string name="call_ringing_remote">מצלצל…</string>
+    <string name="call_active">שיחה פעילה</string>
+    <string name="call_on_hold">בהמתנה</string>
+
+    <string name="action_mute">השתק</string>
+    <string name="action_unmute">בטל השתקה</string>
+    <string name="action_silence">השתק צלצול</string>
+    <string name="action_call_back">חייג חזרה</string>
+
+    <plurals name="missed_calls_title">
+        <item quantity="one">שיחה שלא נענתה</item>
+        <item quantity="two">%d שיחות שלא נענו</item>
+        <item quantity="other">%d שיחות שלא נענו</item>
+    </plurals>
+    <plurals name="voicemail_new">
+        <item quantity="one">הודעה קולית חדשה</item>
+        <item quantity="two">%d הודעות קוליות חדשות</item>
+        <item quantity="other">%d הודעות קוליות חדשות</item>
+    </plurals>
+
+    <string name="keepalive_title">חייגן אהבת ישראל</string>
+    <string name="keepalive_ready">מחובר ומוכן לשיחות</string>
+    <string name="keepalive_connecting">מתחבר למרכזייה…</string>
+</resources>

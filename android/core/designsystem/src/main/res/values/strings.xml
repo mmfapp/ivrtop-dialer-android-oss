@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Single source of UI strings for all feature modules (Hebrew = default locale).
+  English: values-en/strings.xml. Never hard-code UI text in Kotlin.
+  Numbers/URIs inside sentences are wrapped with String.ltr() at the call site.
+-->
+<resources>
+    <string name="brand_name">אהבת ישראל – פתרונות תקשורת ואוטומציות</string>
+    <string name="app_name_he">חייגן השיחות של אהבת ישראל</string>
+
+    <!-- Common -->
+    <string name="ok">אישור</string>
+    <string name="cancel">ביטול</string>
+    <string name="save">שמירה</string>
+    <string name="delete">מחיקה</string>
+    <string name="close">סגירה</string>
+    <string name="retry">ניסיון חוזר</string>
+    <string name="continue_">המשך</string>
+    <string name="skip">דילוג</string>
+    <string name="back">חזרה</string>
+    <string name="more">אפשרויות נוספות</string>
+    <string name="search">חיפוש</string>
+    <string name="copied">הועתק</string>
+    <string name="details">פרטים</string>
+    <string name="technical_details">פרטים טכניים</string>
+    <string name="unknown_number">מספר לא מזוהה</string>
+    <string name="private_number">מספר חסוי</string>
+    <string name="enabled">פעיל</string>
+    <string name="disabled">כבוי</string>
+
+    <!-- Navigation -->
+    <string name="tab_favorites">מועדפים</string>
+    <string name="tab_recents">אחרונות</string>
+    <string name="tab_dialer">חייגן</string>
+    <string name="tab_contacts">אנשי קשר</string>
+    <string name="tab_settings">הגדרות</string>
+    <string name="switch_account">החלפת חשבון</string>
+    <string name="dnd_active_badge">נא לא להפריע פעיל</string>
+
+    <!-- Connection status -->
+    <string name="status_idle">ממתין</string>
+    <string name="status_disabled">החשבון כבוי</string>
+    <string name="status_registering">מתחבר למרכזייה…</string>
+    <string name="status_registered">מחובר ומוכן לשיחות</string>
+    <string name="status_no_network">אין חיבור לאינטרנט</string>
+    <string name="status_disconnected">החיבור נותק – מתחבר מחדש</string>
+    <string name="status_auth_failed">פרטי התחברות שגויים</string>
+    <string name="status_unreachable">לא ניתן להגיע לשרת</string>
+    <string name="status_suspended">החשבון מושבת</string>
+    <string name="status_calls_disabled">שיחות מושבתות זמנית</string>
+    <string name="status_dnd">נא לא להפריע</string>
+
+    <!-- Errors -->
+    <string name="err_network">אין חיבור לאינטרנט. בדקו Wi-Fi או נתונים סלולריים.</string>
+    <string name="err_dns">כתובת השרת לא נמצאה. בדקו שהכתובת נכונה.</string>
+    <string name="err_unreachable">לא ניתן להגיע למרכזייה כרגע.</string>
+    <string name="err_tls">החיבור המאובטח לשרת נכשל (תעודת אבטחה).</string>
+    <string name="err_timeout">השרת לא הגיב בזמן.</string>
+    <string name="err_auth">שם המשתמש או הסיסמה שגויים.</string>
+    <string name="err_forbidden">הגישה נדחתה על ידי המרכזייה.</string>
+    <string name="err_not_found">המספר או המשתמש לא נמצאו.</string>
+    <string name="err_codec">אין התאמה בהגדרות השמע מול הצד השני.</string>
+    <string name="err_server">שגיאה במרכזייה. נסו שוב מאוחר יותר.</string>
+    <string name="err_rate_limited">יותר מדי ניסיונות. נסו שוב בעוד מספר דקות.</string>
+    <string name="err_invalid_number">המספר שהוקלד אינו תקין.</string>
+    <string name="err_transfer">העברת השיחה נכשלה.</string>
+    <string name="err_token_invalid">קישור ההגדרה אינו תקין.</string>
+    <string name="err_duplicate">החשבון הזה כבר קיים באפליקציה.</string>
+    <string name="err_link_domain">הקישור מפנה לשרת שאינו של אהבת ישראל ולכן נחסם. להגדרת ספק אחר השתמשו בהגדרה ידנית.</string>
+    <string name="err_permission">נדרשת הרשאה כדי להמשיך.</string>
+    <string name="err_engine">מנוע השיחות עדיין לא מוכן.</string>
+    <string name="err_emergency">שיחות חירום מתבצעות דרך החייגן הסלולרי של המכשיר.</string>
+    <string name="err_no_account">לא הוגדר חשבון פעיל לביצוע שיחות.</string>
+    <string name="err_blocked">המספר חסום.</string>
+    <string name="err_unknown">אירעה שגיאה לא צפויה.</string>
+
+    <!-- Call phases / endings -->
+    <string name="phase_dialing">מחייג…</string>
+    <string name="phase_connecting">מתחבר…</string>
+    <string name="phase_ringing">מצלצל…</string>
+    <string name="phase_incoming">שיחה נכנסת</string>
+    <string name="phase_active">שיחה פעילה</string>
+    <string name="phase_holding">בהמתנה</string>
+    <string name="phase_remote_held">הצד השני העביר להמתנה</string>
+    <string name="phase_transferring">מעביר שיחה…</string>
+    <string name="end_ended">השיחה הסתיימה</string>
+    <string name="end_busy">הקו תפוס</string>
+    <string name="end_declined">השיחה נדחתה</string>
+    <string name="end_unavailable">היעד אינו זמין</string>
+    <string name="end_network_lost">החיבור נותק</string>
+    <string name="end_cancelled">השיחה בוטלה</string>
+    <string name="end_answered_elsewhere">נענתה במכשיר אחר</string>
+    <string name="end_missed">שיחה שלא נענתה</string>
+    <string name="end_transferred">השיחה הועברה</string>
+    <string name="end_failed">השיחה נכשלה</string>
+
+    <!-- Dialer -->
+    <string name="dialer_hint">הקלידו מספר או כתובת SIP</string>
+    <string name="action_call">חיוג</string>
+    <string name="action_delete_digit">מחיקת ספרה</string>
+    <string name="action_clear">ניקוי</string>
+    <string name="action_paste">הדבקה</string>
+    <string name="action_copy">העתקה</string>
+    <string name="action_add_contact">הוספה לאנשי קשר</string>
+    <string name="action_redial">חיוג חוזר</string>
+    <string name="call_from">חיוג מ: %1$s</string>
+    <string name="select_account">בחירת חשבון לשיחה</string>
+    <string name="dialpad_long_plus">הוספת +</string>
+    <string name="dialpad_long_voicemail">תא קולי</string>
+    <string name="dialpad_long_speeddial">חיוג מהיר</string>
+    <string name="speed_dial_unassigned">לא הוגדר חיוג מהיר למקש %1$d</string>
+    <string name="emergency_title">שיחת חירום</string>
+    <string name="emergency_body">שיחות חירום אינן מועברות דרך האינטרנט. החיוג יתבצע דרך החייגן הסלולרי של המכשיר.</string>
+    <string name="emergency_btn">מעבר לחייגן הסלולרי</string>
+    <string name="no_account_title">עוד לא הוגדר חשבון</string>
+    <string name="no_account_body">כדי לבצע שיחות יש להגדיר חשבון – בקישור, בסריקת קוד או ידנית.</string>
+    <string name="no_account_btn">הגדרת חשבון</string>
+
+    <!-- Recents -->
+    <string name="recents_empty">אין עדיין שיחות</string>
+    <string name="recents_empty_body">השיחות שתבצעו ותקבלו יופיעו כאן.</string>
+    <string name="filter_all">הכול</string>
+    <string name="filter_missed">שלא נענו</string>
+    <string name="filter_incoming">נכנסות</string>
+    <string name="filter_outgoing">יוצאות</string>
+    <string name="filter_blocked">חסומות</string>
+    <string name="type_incoming">נכנסת</string>
+    <string name="type_outgoing">יוצאת</string>
+    <string name="type_missed">לא נענתה</string>
+    <string name="type_rejected">נדחתה</string>
+    <string name="type_failed">נכשלה</string>
+    <string name="type_cancelled">בוטלה</string>
+    <string name="type_blocked">נחסמה</string>
+    <string name="today">היום</string>
+    <string name="yesterday">אתמול</string>
+    <string name="older">קודם לכן</string>
+    <string name="delete_selected">מחיקת הנבחרים</string>
+    <string name="delete_all_history">מחיקת כל ההיסטוריה</string>
+    <string name="delete_all_confirm">למחוק את כל היסטוריית השיחות? לא ניתן לבטל פעולה זו.</string>
+    <string name="block_number">חסימת מספר</string>
+    <string name="unblock_number">ביטול חסימה</string>
+    <string name="copy_number">העתקת מספר</string>
+    <string name="call_details">פרטי שיחה</string>
+    <string name="export_history">ייצוא היסטוריה</string>
+    <string name="duration">משך: %1$s</string>
+    <string name="via_account">דרך %1$s</string>
+    <string name="sip_status_detail">קוד SIP: %1$d</string>
+    <string name="selected_count">%1$d נבחרו</string>
+
+    <!-- Contacts -->
+    <string name="contacts_search_hint">חיפוש בשם או במספר</string>
+    <string name="contacts_permission_title">הצגת אנשי הקשר שלכם</string>
+    <string name="contacts_permission_body">כדי לזהות מי מתקשר ולחייג בקלות, האפליקציה צריכה גישה לאנשי הקשר. המידע נשאר במכשיר ואינו נשלח לשרת.</string>
+    <string name="contacts_permission_btn">מתן גישה</string>
+    <string name="contacts_empty">לא נמצאו אנשי קשר</string>
+    <string name="add_contact">איש קשר חדש</string>
+    <string name="edit_contact">עריכה באנשי הקשר</string>
+    <string name="add_to_favorites">הוספה למועדפים</string>
+    <string name="remove_from_favorites">הסרה מהמועדפים</string>
+
+    <!-- Favorites -->
+    <string name="favorites_empty">אין עדיין מועדפים</string>
+    <string name="favorites_empty_body">הוסיפו אנשי קשר למועדפים כדי לחייג אליהם בלחיצה אחת.</string>
+    <string name="assign_speed_dial">הגדרת חיוג מהיר</string>
+    <string name="speed_dial_key">מקש %1$d</string>
+    <string name="none">ללא</string>
+    <string name="reorder_hint">לחיצה ארוכה וגרירה לשינוי הסדר</string>
+    <string name="presence_available">זמין</string>
+    <string name="presence_busy">בשיחה</string>
+    <string name="presence_ringing">מצלצל</string>
+    <string name="presence_offline">לא מחובר</string>
+
+    <!-- Incoming / active call -->
+    <string name="answer">מענה</string>
+    <string name="decline">דחייה</string>
+    <string name="silence">השתקת צלצול</string>
+    <string name="incoming_to_account">שיחה נכנסת ל%1$s</string>
+    <string name="end_call">סיום שיחה</string>
+    <string name="mute">השתקה</string>
+    <string name="speaker">רמקול</string>
+    <string name="audio_output">פלט שמע</string>
+    <string name="route_earpiece">אפרכסת</string>
+    <string name="route_speaker">רמקול</string>
+    <string name="route_bluetooth">Bluetooth</string>
+    <string name="route_wired">אוזניות</string>
+    <string name="keypad">מקלדת</string>
+    <string name="hide_keypad">הסתרת מקלדת</string>
+    <string name="hold">המתנה</string>
+    <string name="resume">חידוש</string>
+    <string name="add_call">הוספת שיחה</string>
+    <string name="swap_calls">החלפה</string>
+    <string name="merge_calls">מיזוג</string>
+    <string name="transfer">העברה</string>
+    <string name="transfer_blind">העברה ישירה</string>
+    <string name="transfer_attended">העברה לאחר התייעצות</string>
+    <string name="transfer_to">העברה אל…</string>
+    <string name="transfer_target_hint">מספר או שלוחה</string>
+    <string name="on">פועל</string>
+    <string name="off">כבוי</string>
+    <string name="quality_title">איכות השיחה</string>
+    <string name="quality_excellent">מצוינת</string>
+    <string name="quality_good">טובה</string>
+    <string name="quality_fair">בינונית</string>
+    <string name="quality_poor">חלשה</string>
+    <string name="quality_detail">קודק %1$s · השהיה %2$d ms · ג׳יטר %3$d ms · אובדן %4$.1f%%</string>
+    <string name="calls_on_hold_count">%1$d שיחות בהמתנה</string>
+    <string name="conference">שיחת ועידה</string>
+
+    <!-- Voicemail -->
+    <string name="voicemail_title">תא קולי</string>
+    <string name="voicemail_new">%1$d הודעות חדשות</string>
+    <string name="voicemail_none">אין הודעות חדשות</string>
+    <string name="voicemail_call">האזנה להודעות</string>
+    <string name="voicemail_api_note">רשימת הודעות והאזנה ישירה יופיעו כאן כאשר המרכזייה תומכת בכך.</string>
+
+    <!-- Blocking -->
+    <string name="blocking_title">חסימת מספרים</string>
+    <string name="block_add">הוספת מספר לחסימה</string>
+    <string name="block_kind_exact">מספר מדויק</string>
+    <string name="block_kind_prefix">כל המספרים שמתחילים ב…</string>
+    <string name="block_anonymous">חסימת מספרים חסויים</string>
+    <string name="allow_list">רשימת מורשים</string>
+    <string name="deny_list">רשימה שחורה</string>
+    <string name="block_empty">אין מספרים חסומים</string>
+    <string name="block_local_note">החסימה מתבצעת במכשיר. חסימה ברמת המרכזייה זמינה בחשבונות מנוהלים.</string>
+
+    <!-- DND -->
+    <string name="dnd_title">נא לא להפריע</string>
+    <string name="dnd_turn_on">הפעלה</string>
+    <string name="dnd_turn_off">כיבוי</string>
+    <string name="dnd_for_1h">לשעה אחת</string>
+    <string name="dnd_for_hours">ל־%1$d שעות</string>
+    <string name="dnd_until_time">עד %1$s</string>
+    <string name="dnd_until_off">עד שאכבה</string>
+    <string name="dnd_active_until">פעיל עד %1$s</string>
+    <string name="dnd_schedule">תזמון שבועי</string>
+    <string name="dnd_add_schedule">הוספת תזמון</string>
+    <string name="dnd_allow_favorites">לאפשר שיחות ממועדפים</string>
+    <string name="dnd_repeat_callers">לאפשר מתקשרים חוזרים (תוך 15 דקות)</string>
+    <string name="dnd_behavior">התנהגות בזמן נא לא להפריע</string>
+    <string name="dnd_action_silence">השתקת הצלצול בלבד</string>
+    <string name="dnd_action_reject">דחיית השיחה</string>
+    <string name="dnd_action_voicemail">העברה לתא קולי</string>
+    <string name="dnd_action_forward">העברה ליעד אחר</string>
+    <string name="dnd_forward_to">יעד להעברה</string>
+    <string name="dnd_scope_note">מצב זה פועל באפליקציה בלבד. מצב נא לא להפריע של Android והגדרות המרכזייה פועלים בנפרד.</string>
+    <string name="days_short">א,ב,ג,ד,ה,ו,ש</string>
+    <string name="from_time">מ־</string>
+    <string name="to_time">עד</string>
+
+    <!-- Accounts -->
+    <string name="accounts_title">חשבונות</string>
+    <string name="add_account">הוספת חשבון</string>
+    <string name="add_via_link">הדבקת קישור הגדרה</string>
+    <string name="add_via_qr">סריקת קוד QR</string>
+    <string name="add_manual">הגדרה ידנית</string>
+    <string name="account_default">ברירת מחדל</string>
+    <string name="account_managed">מנוהל ע״י אהבת ישראל</string>
+    <string name="account_reconnect">התחברות מחדש</string>
+    <string name="account_delete_confirm">למחוק את החשבון %1$s? הסיסמה תימחק מהמכשיר.</string>
+    <string name="account_delete_history">למחוק גם את היסטוריית השיחות של החשבון</string>
+    <string name="field_display_name">שם תצוגה</string>
+    <string name="field_phone_number">מספר טלפון</string>
+    <string name="field_username">שם משתמש / שלוחה</string>
+    <string name="field_auth_username">שם משתמש לאימות (אם שונה)</string>
+    <string name="field_password">סיסמה</string>
+    <string name="field_domain">כתובת שרת (דומיין)</string>
+    <string name="field_registrar">Registrar</string>
+    <string name="field_proxy">Outbound Proxy</string>
+    <string name="field_realm">Realm</string>
+    <string name="field_port">פורט</string>
+    <string name="field_transport">פרוטוקול</string>
+    <string name="field_expiry">זמן רישום (שניות)</string>
+    <string name="field_keepalive">Keep-Alive (שניות)</string>
+    <string name="field_stun">שרת STUN</string>
+    <string name="field_turn">שרת TURN</string>
+    <string name="field_turn_user">משתמש TURN</string>
+    <string name="field_turn_password">סיסמת TURN</string>
+    <string name="field_ice">ICE</string>
+    <string name="field_srtp">הצפנת שמע (SRTP)</string>
+    <string name="field_dtmf">שיטת DTMF</string>
+    <string name="field_codecs">קודקים</string>
+    <string name="field_push">התראות Push לשיחות נכנסות</string>
+    <string name="field_voicemail">מספר תא קולי</string>
+    <string name="field_enabled">החשבון פעיל</string>
+    <string name="field_incoming">קבלת שיחות נכנסות</string>
+    <string name="field_outgoing">ביצוע שיחות יוצאות</string>
+    <string name="field_account_dnd">נא לא להפריע לחשבון זה</string>
+    <string name="field_ringtone">צלצול</string>
+    <string name="field_color">צבע לזיהוי</string>
+    <string name="advanced_settings">הגדרות מתקדמות</string>
+    <string name="auto_detect">זיהוי אוטומטי</string>
+    <string name="allow_insecure">לאפשר חיבור לא מוצפן (TCP/UDP)</string>
+    <string name="allow_insecure_warning">חיבור לא מוצפן חושף את פרטי השיחה ברשת. מומלץ להשתמש רק ברשת פרטית.</string>
+    <string name="srtp_disabled">כבוי</string>
+    <string name="srtp_optional">אם נתמך</string>
+    <string name="srtp_mandatory">חובה</string>
+    <string name="managed_field_locked">שדה זה מנוהל מרחוק</string>
+
+    <!-- Onboarding / provisioning -->
+    <string name="welcome_title">ברוכים הבאים</string>
+    <string name="welcome_body">החייגן המתקדם של אהבת ישראל. שיחות באיכות גבוהה, מכל מקום, בפשטות.</string>
+    <string name="get_started">בואו נתחיל</string>
+    <string name="setup_choose">איך תרצו להגדיר את החשבון?</string>
+    <string name="setup_link_hint">קיבלתם קישור הגדרה (ivr.top) בוואטסאפ, SMS או מייל? פשוט לחצו עליו – או הדביקו אותו כאן או סרקו את ה-QR. אפשר להוסיף כמה חשבונות.</string>
+    <string name="setup_confirm_title">אישור הגדרת חשבון</string>
+    <string name="setup_confirm_body">החשבון הבא יוגדר במכשיר:</string>
+    <string name="setup_confirm_btn">אישור והתחברות</string>
+    <string name="step_locate">מאתר את המרכזייה</string>
+    <string name="step_credentials">בודק את פרטי ההתחברות</string>
+    <string name="step_connection">בודק את החיבור</string>
+    <string name="step_done">החשבון הוגדר בהצלחה</string>
+    <string name="setup_failed">ההגדרה לא הושלמה</string>
+    <string name="setup_to_dialer">מעבר לחייגן</string>
+    <string name="setup_update_existing">החשבון קיים – פרטיו יעודכנו</string>
+    <string name="setup_additional_account">החשבון יתווסף כחשבון נוסף – החשבונות הקיימים נשארים</string>
+    <string name="permissions_title">כמה הרשאות קטנות</string>
+    <string name="permissions_body">כדי שתוכלו לדבר ולקבל שיחות גם כשהאפליקציה סגורה:</string>
+    <string name="perm_mic">מיקרופון – כדי שישמעו אתכם בשיחה</string>
+    <string name="perm_notifications">התראות – להצגת שיחות נכנסות</string>
+    <string name="perm_contacts">אנשי קשר – לזיהוי מתקשרים (אופציונלי)</string>
+    <string name="perm_fullscreen">מסך מלא לשיחות נכנסות – גם כשהמכשיר נעול</string>
+    <string name="perm_battery">פטור מחיסכון בסוללה – לקבלת שיחות אמינה</string>
+    <string name="scan_qr_prompt">כוונו את המצלמה לקוד ה-QR שקיבלתם</string>
+    <string name="perm_grant">מתן הרשאה</string>
+    <string name="perm_granted">ניתנה</string>
+    <string name="battery_hint_title">המכשיר עלול לעכב שיחות נכנסות</string>
+    <string name="battery_hint_body">יצרן המכשיר מגביל אפליקציות ברקע. מומלץ לאפשר לאפליקציה לפעול ללא הגבלת סוללה.</string>
+    <string name="open_settings">פתיחת הגדרות</string>
+
+    <!-- Settings -->
+    <string name="settings_accounts">חשבונות</string>
+    <string name="settings_calls">שיחות</string>
+    <string name="settings_audio">שמע</string>
+    <string name="settings_network">חיבור ורשת</string>
+    <string name="settings_display">תצוגה</string>
+    <string name="settings_security">אבטחה ופרטיות</string>
+    <string name="settings_support">תמיכה</string>
+    <string name="set_default_account">חשבון ברירת מחדל</string>
+    <string name="set_ask_each_call">לשאול בכל שיחה</string>
+    <string name="set_call_waiting">שיחה ממתינה</string>
+    <string name="set_vibrate">רטט בעת צלצול</string>
+    <string name="set_dialpad_tones">צלילי מקשים</string>
+    <string name="set_haptics">משוב רטט במגע</string>
+    <string name="set_proximity">כיבוי מסך בהצמדה לאוזן</string>
+    <string name="set_speed_dial">חיוג מהיר</string>
+    <string name="set_blocking">חסימת מספרים</string>
+    <string name="set_dnd">נא לא להפריע</string>
+    <string name="set_echo">ביטול הד</string>
+    <string name="set_noise">סינון רעשים</string>
+    <string name="set_agc">איזון עוצמה אוטומטי</string>
+    <string name="set_codecs">סדר קודקים</string>
+    <string name="set_connectivity_mode">קבלת שיחות ברקע</string>
+    <string name="mode_persistent">חיבור קבוע (מומלץ)</string>
+    <string name="mode_persistent_desc">קבלת שיחות גם כשהאפליקציה סגורה. מוצגת התראה קבועה קטנה "מחובר ומוכן לשיחות".</string>
+    <string name="mode_foreground">רק כשהאפליקציה פתוחה</string>
+    <string name="mode_foreground_desc">לא יתקבלו שיחות כשהאפליקציה סגורה.</string>
+    <string name="set_wifi_only">שימוש ב-Wi-Fi בלבד</string>
+    <string name="set_connection_test">בדיקת איכות חיבור</string>
+    <string name="set_theme">ערכת נושא</string>
+    <string name="theme_system">לפי המכשיר</string>
+    <string name="theme_light">בהירה</string>
+    <string name="theme_dark">כהה</string>
+    <string name="set_dynamic_color">צבעים דינמיים</string>
+    <string name="set_language">שפה</string>
+    <string name="lang_system">לפי המכשיר</string>
+    <string name="lang_he">עברית</string>
+    <string name="lang_en">English</string>
+    <string name="set_reduce_motion">צמצום אנימציות</string>
+    <string name="set_start_tab">מסך פתיחה</string>
+    <string name="set_hebrew_letters">אותיות עבריות במקלדת</string>
+    <string name="set_app_lock">נעילה ביומטרית</string>
+    <string name="set_permissions">ניהול הרשאות</string>
+    <string name="set_delete_data">מחיקת כל נתוני האפליקציה</string>
+    <string name="set_delete_data_confirm">כל החשבונות, הסיסמאות וההיסטוריה יימחקו מהמכשיר. להמשיך?</string>
+    <string name="set_privacy">מדיניות פרטיות</string>
+    <string name="set_diagnostics">בדיקת אבחון</string>
+    <string name="set_export_report">ייצוא דוח טכני (ללא סיסמאות)</string>
+    <string name="set_contact_support">יצירת קשר עם התמיכה</string>
+    <string name="set_guide">מדריך שימוש</string>
+    <string name="set_version">גרסה %1$s</string>
+    <string name="set_licenses">רישיונות קוד פתוח</string>
+    <string name="set_website">אתר אהבת ישראל</string>
+    <string name="set_verbose_logs">רישום מורחב לאבחון</string>
+    <string name="unlock_title">החייגן נעול</string>
+    <string name="unlock_subtitle">אמתו את זהותכם כדי להמשיך</string>
+    <string name="unlock_btn">ביטול נעילה</string>
+
+    <!-- Diagnostics -->
+    <string name="diag_network">רשת</string>
+    <string name="diag_registration">רישום למרכזייה</string>
+    <string name="diag_battery">חיסכון בסוללה</string>
+    <string name="diag_fullscreen">מסך מלא לשיחות</string>
+    <string name="diag_ok">תקין</string>
+    <string name="diag_problem">דורש טיפול</string>
+</resources>

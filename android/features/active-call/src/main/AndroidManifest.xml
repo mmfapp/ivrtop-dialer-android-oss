@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!--
+          Hosts the incoming and in-call UI. Shown over the lock screen; separate task so the
+          call UI never mixes with the dialer back stack. Not exported.
+        -->
+        <activity
+            android:name=".CallActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.ivrtop.dialer.call"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden"
+            android:theme="@style/Theme.Ivrtop.Call" />
+    </application>
+</manifest>

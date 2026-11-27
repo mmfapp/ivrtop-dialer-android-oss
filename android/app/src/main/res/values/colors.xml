@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_ocean">#FF0A78A6</color>
+    <color name="brand_teal">#FF10B3B5</color>
+    <color name="splash_bg">#FF0A78A6</color>
+    <color name="window_bg">#FFF7FAFA</color>
+</resources>

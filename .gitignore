@@ -1,0 +1,38 @@
+# ---- secrets: NEVER commit ----
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+keystore.properties
+google-services.json
+GoogleService-Info.plist
+deploy/secrets/
+deploy/certs/
+*.pem
+*.p12
+*.p8
+firebase*.json
+!contracts/**/*.json
+
+# ---- Android / Gradle ----
+android/.gradle/
+android/build/
+android/**/build/
+android/local.properties
+android/.idea/
+android/*.iml
+android/**/*.iml
+android/captures/
+android/.kotlin/
+android/app/release/
+# generated PJSIP artefacts (built by scripts/pjsip/build-pjsip-android.sh)
+android/telephony/sip-engine/pjsua2/java/
+android/telephony/sip-engine/pjsua2/jniLibs/
+.build/
+
+*service-account*.json
+play-*.json
+signing.env
+android/build-logic/.gradle/
+.DS_Store
