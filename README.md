@@ -6,7 +6,7 @@ Source code of the Android SIP dialer app, published under **GPL-3.0-or-later** 
 - Terms of use: https://ivr.top/dialer/android/terms
 
 ## Build
-The Gradle project is in [`android/`](android/). The PJSIP (pjsua2) native libraries and Java bindings are generated artefacts and are not committed – see [`android/telephony/sip-engine/pjsua2/README.md`](android/telephony/sip-engine/pjsua2/README.md).
+The Gradle project is in [`android/`](android/). The PJSIP (pjsua2) native libraries and Java bindings are generated, not committed: build them with [`scripts/pjsip/build-pjsip-android.sh`](scripts/pjsip/build-pjsip-android.sh) (Linux / WSL, Android NDK r27+) – see [`android/telephony/sip-engine/pjsua2/README.md`](android/telephony/sip-engine/pjsua2/README.md).
 
 Release signing reads `IVRTOP_KEYSTORE_PASSWORD` / `IVRTOP_KEY_PASSWORD` from the environment; no keys are stored here.
 
